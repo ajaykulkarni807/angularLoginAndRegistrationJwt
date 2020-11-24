@@ -1,0 +1,57 @@
+<form #form="ngForm" autocomplete="off" (ngSubmit)="onSubmit(form)">
+   <input type="hidden" name="PMId" [value]="Service.formData.PMId">
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-users" [class.green-icon]="CardOwnerName.valid" [class.red-icon]="CardOwnerName.invalid && CardOwnerName.touched"></i>
+                </div>
+            </div>
+            <input class="form-control" type="text" name="CardOwnerName" #CardOwnerName="ngModel"
+                [(ngModel)]="Service.formData.CardOwnerName" placeholder="car owner name" required>
+        </div>
+
+    </div>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-credit-card" [class.green-icon]="CardOwnerNumber.valid" [class.red-icon]="CardOwnerNumber.invalid && CardOwnerNumber.touched"></i>
+                </div>
+            </div>
+            <input class="form-control" type="text" name="CardOwnerNumber" #CardOwnerNumber="ngModel"
+                [(ngModel)]="Service.formData.CardOwnerNumber" placeholder="car owner Number" required minlength="16" maxlength="16">
+        </div>
+    </div>
+
+
+
+    <div class="form-group ">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-calendar-week" [class.green-icon]="ExpirationDate.valid" [class.red-icon]="ExpirationDate.invalid && ExpirationDate.touched"></i>
+                </div>
+            </div>
+            <input class="form-control" type="text" name="ExpirationDate" #ExpirationDate="ngModel"
+                [(ngModel)]="Service.formData.ExpirationDate" placeholder="Expiration Date" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="input-group ">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-credit-card" [class.green-icon]="Cvv.valid" [class.red-icon]="Cvv.invalid && Cvv.touched"></i>
+                </div>
+            </div>
+            <input class="form-control" type="text" name="Cvv" #Cvv="ngModel"
+                [(ngModel)]="Service.formData.Cvv" placeholder="Cvv" required minlength="3" maxlength="3">
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary" [disabled]="!form.form.valid">
+            Save
+        </button>
+    </div>
+</form>
