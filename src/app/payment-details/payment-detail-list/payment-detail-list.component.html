@@ -1,0 +1,8 @@
+<table class="table table-hover">
+    <tr *ngFor="let item of service.list">
+        <td (click)="PopulateData(item)">{{item.CardOwnerName}}</td>
+        <td (click)="PopulateData(item)">{{item.CardOwnerNumber}}</td>
+        <td (click)="PopulateData(item)">{{item.ExpirationDate}}</td>
+        <td><i class="fas fa-trash" (click)="DeleteRecord(item.PMId)"></i></td>
+    </tr>
+</table>
