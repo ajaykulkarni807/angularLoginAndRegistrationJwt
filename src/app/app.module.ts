@@ -21,6 +21,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastrModule } from 'ngx-toastr';
+import { TestComponent } from './test/test.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -34,7 +36,9 @@ import { ToastrModule } from 'ngx-toastr';
     ForbiddenComponent,
     PaymentDetailComponent,
     PaymentDetailListComponent,
-    MasterPaymmentComponent
+    MasterPaymmentComponent,
+    TestComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

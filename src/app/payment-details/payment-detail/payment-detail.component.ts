@@ -24,7 +24,6 @@ export class PaymentDetailComponent implements OnInit {
     this.Service.formData={
       PMId: 0
     }
-
   }
 
   onSubmit(form: NgForm) {

@@ -4,6 +4,7 @@ import { AdminPanleComponent } from './admin-panle/admin-panle.component';
 import { AuthGuard } from './auth/auth.guard';
 import { ForbiddenComponent } from './forbidden/forbidden.component';
 import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { MasterPaymmentComponent } from './payment-details/master-paymment/master-paymment.component';
 import { PaymentDetailComponent } from './payment-details/payment-detail/payment-detail.component';
 import { LoginComponent } from './user/login/login.component';
@@ -26,6 +27,9 @@ const routes: Routes = [
   },
   {
     path: 'payment', component: MasterPaymmentComponent, canActivate: [AuthGuard], data: { permittedRoles: ['Admin'] }
+  },
+  {
+    path:"**",component:PageNotFoundComponent
   }
 
 

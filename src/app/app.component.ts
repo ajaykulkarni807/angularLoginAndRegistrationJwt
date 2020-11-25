@@ -9,6 +9,13 @@ import { forbiddenNameValidator } from 'src/shared/user-validator';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  ParentData="this data coming from parent component";
+  childData="";
+  getdata(data){
+this.childData=data;
+  }
+
 //   title = 'reactive-form';
 
 //   // registrationForm=new FormGroup({
