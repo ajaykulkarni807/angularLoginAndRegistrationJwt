@@ -1,1 +1,9 @@
+
+
+<app-test [hero]="ParentData"></app-test>
+
 <router-outlet></router-outlet>
+
+<app-test (chidldata)="getdata($event)"></app-test>
+{{childData}}
+
