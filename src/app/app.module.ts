@@ -23,6 +23,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { TestComponent } from './test/test.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CustomeStyleDirective } from './custome-style.directive';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     PaymentDetailListComponent,
     MasterPaymmentComponent,
     TestComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CustomeStyleDirective
   ],
   imports: [
     BrowserModule,
@@ -49,8 +51,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     FontAwesomeModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot()
-
-
   ],
   providers: [UserService, {
     provide: HTTP_INTERCEPTORS,
