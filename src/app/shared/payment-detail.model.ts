@@ -1,4 +1,4 @@
-export class PaymentDetail {
+export interface PaymentDetail {
     PMId: number;
     CardOwnerName: string
     CardOwnerNumber: string
