@@ -6,9 +6,9 @@ import { PaymentDetail } from './payment-detail.model';
   providedIn: 'root'
 })
 export class PaymentDetailService {
- formData= PaymentDetail;
+ formData: PaymentDetail;
   list: PaymentDetail[];
-  readonly url= "http://localhost:50627/api";
+  readonly url= "http://localhost:8081/api";
 
   constructor(private http:HttpClient) { }
 

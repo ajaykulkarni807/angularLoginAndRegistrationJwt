@@ -22,7 +22,11 @@ export class PaymentDetailComponent implements OnInit {
       form.resetForm()
     }
     this.Service.formData={
-      PMId: 0
+      PMId: 0,
+      CardOwnerName:'',
+      CardOwnerNumber:'',
+      ExpirationDate:'',
+      Cvv:''
     }
   }
 

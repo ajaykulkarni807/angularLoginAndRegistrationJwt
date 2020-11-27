@@ -16,7 +16,7 @@ export class PaymentDetailListComponent implements OnInit {
     this.service.RefereshList();
   }
 
-  PopulateData(pd: typeof PaymentDetail) {
+  PopulateData(pd ) {
     this.service.formData = Object.assign({}, pd);
   }
 
