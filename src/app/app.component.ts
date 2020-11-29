@@ -10,11 +10,7 @@ import { forbiddenNameValidator } from 'src/shared/user-validator';
 })
 export class AppComponent {
 
-  ParentData = "this data coming from parent component";
-  childData = "";
-  getdata(data) {
-    this.childData = data;
-  }
+}
   //   title = 'reactive-form';
 
   //   // registrationForm=new FormGroup({
@@ -61,4 +57,3 @@ export class AppComponent {
 
 
 
-}
