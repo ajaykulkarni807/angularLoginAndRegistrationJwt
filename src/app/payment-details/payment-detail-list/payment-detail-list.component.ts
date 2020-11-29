@@ -10,7 +10,7 @@ import { PaymentDetailService } from 'src/app/shared/payment-detail.service';
 })
 export class PaymentDetailListComponent implements OnInit {
 
-  constructor(private service: PaymentDetailService, private toster: ToastrService) { }
+  constructor(public service: PaymentDetailService, private toster: ToastrService) { }
 
   ngOnInit(): void {
     this.service.RefereshList();
@@ -28,13 +28,9 @@ export class PaymentDetailListComponent implements OnInit {
           this.toster.warning("Record Deleted", "Payment Detail ");
         },
         err => {
-          console.log(err);
+          console.log(err); 
         }
-
       )
     }
   }
-
-
-
 }

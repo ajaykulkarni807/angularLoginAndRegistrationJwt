@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 import { PaymentDetail } from './payment-detail.model';
 
 @Injectable({
@@ -8,7 +9,8 @@ import { PaymentDetail } from './payment-detail.model';
 export class PaymentDetailService {
  formData: PaymentDetail;
   list: PaymentDetail[];
-  readonly url= "http://localhost:8081/api";
+ 
+  readonly url=environment.baseUrl;
 
   constructor(private http:HttpClient) { }
 

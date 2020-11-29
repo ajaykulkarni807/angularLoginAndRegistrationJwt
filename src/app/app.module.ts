@@ -24,6 +24,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { TestComponent } from './test/test.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CustomeStyleDirective } from './custome-style.directive';
+import { ParentComponent } from './parent/parent.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { CustomeStyleDirective } from './custome-style.directive';
     MasterPaymmentComponent,
     TestComponent,
     PageNotFoundComponent,
-    CustomeStyleDirective
+    CustomeStyleDirective,
+    ParentComponent
   ],
   imports: [
     BrowserModule,
