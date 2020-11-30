@@ -11,7 +11,6 @@ import { LoginComponent } from './user/login/login.component';
 import { HomeComponent } from './home/home.component';
 import { UserService } from './shared/user.service';
 import { AuthInterceptor } from './auth/auth.intercetor';
-import { AdminPanleComponent } from './admin-panle/admin-panle.component';
 import { ForbiddenComponent } from './forbidden/forbidden.component';
 import { PaymentDetailComponent } from './payment-details/payment-detail/payment-detail.component';
 import { PaymentDetailListComponent } from './payment-details/payment-detail-list/payment-detail-list.component';
@@ -34,7 +33,6 @@ import { ParentComponent } from './parent/parent.component';
     RegistrationComponent,
     LoginComponent,
     HomeComponent,
-    AdminPanleComponent,
     ForbiddenComponent,
     PaymentDetailComponent,
     PaymentDetailListComponent,

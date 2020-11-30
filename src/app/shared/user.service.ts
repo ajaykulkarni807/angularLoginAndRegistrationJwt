@@ -3,6 +3,7 @@ import { FormBuilder,Validators } from '@angular/forms';
 import { PasswordValidator } from 'src/shared/password.validator';
 import { forbiddenNameValidator } from 'src/shared/user-validator';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
+import { JsonPipe } from '@angular/common';
 import { environment } from 'src/environments/environment';
 
 
