@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewContainerRef,ComponentFactoryResolver } from '@angular/core';
 
 @Component({
   selector: 'app-list',
@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private vcr:ViewContainerRef,
+    private cfr:ComponentFactoryResolver
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  async LoadListMaster(){
+    this.vcr.clear();
+    const {ListMasterComponent} =await import('src/app/list-master/list-master.component')
+    this.vcr.createComponent(
+this.cfr.resolveComponentFactory(ListMasterComponent)
+    )
   }
 
 }

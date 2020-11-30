@@ -24,6 +24,7 @@ import { TestComponent } from './test/test.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CustomeStyleDirective } from './custome-style.directive';
 import { ParentComponent } from './parent/parent.component';
+import { ListMasterComponent } from './list-master/list-master.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { ParentComponent } from './parent/parent.component';
     TestComponent,
     PageNotFoundComponent,
     CustomeStyleDirective,
-    ParentComponent
+    ParentComponent,
+    ListMasterComponent
   ],
   imports: [
     BrowserModule,
